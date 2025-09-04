@@ -1,17 +1,17 @@
-package models.entidades;
+package model.entidades;
 
 import java.io.Serializable;
 import java.util.Objects;
 
-public class Departament  implements Serializable {
+public class Department  implements Serializable {
     private Integer id;
     private String nome;
 
-    public Departament() {
+    public Department() {
 
     }
 
-    public Departament(Integer id, String nome) {
+    public Department(Integer id, String nome) {
         this.id = id;
         this.nome = nome;
     }
@@ -35,7 +35,7 @@ public class Departament  implements Serializable {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        Departament that = (Departament) o;
+        Department that = (Department) o;
         return Objects.equals(id, that.id);
     }
 
@@ -46,7 +46,7 @@ public class Departament  implements Serializable {
 
     @Override
     public String toString() {
-        return "Departament{" +
+        return "Department{" +
                 "id=" + id +
                 ", nome='" + nome + '\'' +
                 '}';
