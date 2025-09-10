@@ -10,19 +10,19 @@ public class Seller {
     private Date birthDate;
     private Double Salary;
 
-    private Departament departament;
+    private Department department;
 
     public Seller() {
 
     }
 
-    public Seller(Integer id, String name, String email, Date birthDate, Double salary, Departament departament) {
+    public Seller(Integer id, String name, String email, Date birthDate, Double salary, Department department) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.birthDate = birthDate;
         Salary = salary;
-        this.departament = departament;
+        this.department = department;
     }
 
     public Integer getId() {
@@ -65,12 +65,12 @@ public class Seller {
         Salary = salary;
     }
 
-    public Departament getDepartament() {
-        return departament;
+    public Department getDepartament() {
+        return department;
     }
 
-    public void setDepartament(Departament departament) {
-        this.departament = departament;
+    public void setDepartament(Department department) {
+        this.department = department;
     }
 
     @Override
@@ -93,7 +93,7 @@ public class Seller {
                 ", email='" + email + '\'' +
                 ", birthDate=" + birthDate +
                 ", Salary=" + Salary +
-                ", departament=" + departament +
+                ", departament=" + department +
                 '}';
     }
 }
